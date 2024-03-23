@@ -48,6 +48,7 @@ Server loop performed every (n) seconds:
    - clients who are hosting games will respond with their map announcements
 2. the server listens for announcements, and relays any it receives to all users on the network
    - server would need to manually craft UDP packet using the host's IP address as the "from" address in the UDP header
+
 Animation of communication flow:
 
 ![Animation of server communication flow](servercomm.gif)
