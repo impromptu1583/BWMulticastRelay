@@ -52,3 +52,7 @@ Server loop performed every (n) seconds:
 Animation of communication flow:
 
 ![Animation of server communication flow](servercomm.gif)
+
+
+### Why this works
+The "trick" we're leveraging here is spoofing the "from" IP address when the map announcements are distributed. By using the host computer's IP as the "from" IP address the clients know the correct IP to connect to in order to join the lobby. Further reserach is required on whether there are any potential problems with this approach. Preferably the VPN network this would be running over would be restricted to only allow traffic on ports 6111 & 6112 to limit traffic to just BW as well as any additional ports for server communication (e.g. client subscription, ping, etc)
