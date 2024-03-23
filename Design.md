@@ -48,4 +48,6 @@ Server loop performed every (n) seconds:
    - clients who are hosting games will respond with their map announcements
 2. the server listens for announcements, and relays any it receives to all users on the network
 
+Animation of communication flow:
+
 ![Animation of server communication flow](servercomm.gif)
