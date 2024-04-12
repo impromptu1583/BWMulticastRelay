@@ -3,6 +3,14 @@
 ## CM Wan Matchmaker
 This tool allows players hosting games to make those games visible across a WAN connection using port forwarding.
 
+### Setup / Install
+- make sure you have python 3 installed
+- enable running powershell scripts (e.g. open an admin terminal and run `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`) Make sure you know what you're doing as this can allow for untrusted scripts to run, but is needed for activating the virtual environment
+- create a virtual environment somewhere e.g. `python -m venv c:\cm_mmm`
+- activate the venv `c:\cm_mmm\scripts\activate.ps1`
+- install scapy `pip install scapy`
+- copy the cm_wan_matchmaker.py file into the venv directory
+
 ### Usage
 All players need to forward ports 6111 & 6112 to the computers they will be playing on
 
